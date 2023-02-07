@@ -1,0 +1,2 @@
+Site para gerar QR code de um link de site
+https://www.qr-code-generator.com/
