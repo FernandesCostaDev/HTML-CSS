@@ -71,7 +71,7 @@ header > p {
     padding-left: 10px;
     text-align: center;
     margin: auto;
-    margin-bottom: 20px;
+    padding-bottom: 50px;
     /*adicionar sobra a fonte do h1*/ 
    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.493);
 }
