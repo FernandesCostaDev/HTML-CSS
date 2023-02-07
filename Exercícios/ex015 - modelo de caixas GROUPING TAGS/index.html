@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon_css.ico" type="image/x-icon"> 
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(230, 221, 255);         
+        }
+
+        header{            
+            background-color: azure;
+            margin-bottom:10px; 
+            border-radius: 20px; 
+            padding-bottom: 10px;               
+        }
+
+        header > h1{
+            text-align: center;
+        }
+
+        nav{
+            background-color: rgb(95, 95,97);  
+            padding: 3px;          
+            text-align: center;
+            margin-left: 50px;
+            margin-right: 50px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.329);  
+            border-radius: 20px;         
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: azure;
+            font-weight: bolder;
+            margin-right: 30px;                     
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: azure;
+            padding: 10px;            
+            border-radius: 20px;
+        }
+
+        article{
+            background-color: rgb(197, 202, 202);
+            padding: 5px;            
+            margin: 15px;
+            border-radius: 20px 0px;
+        }
+
+        article > aside{
+            background-color: rgb(95, 95, 97);
+            text-align: center;
+            color: rgb(255, 255, 255);
+            margin-left: 50px;
+            margin-right: 50px;
+            font-weight: bolder;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.37); 
+            border-radius: 20px 0px;
+        }
+
+        footer{
+            height: 150px;
+            width: 150px;
+            background-color: black;                     
+            margin-top: 10px; 
+            color: rgb(255, 255, 255); 
+            border-radius: 100px;   
+            text-align: center;  
+            margin: auto;             
+        }
+
+        footer > p{
+            padding-top: 65px;
+            font-weight: bolder;
+        }
+
+     </style>
+    
+    <title>Groupin Tags</title> 
+</head>
+
+<body>
+
+    <header>
+        <h1>Testando cabeçalho - header</h1>
+        <nav>
+            <a href="#">Link_1 nav</a>
+            <a href="#">Link_2 nav</a>
+            <a href="#">Link_3 nav</a>
+            <a href="#">Link_4 nav</a>        
+        </nav>        
+    </header>
+
+
+    <main>
+
+        <section id="assuntos">            
+        </section>
+
+        <section id="notícias">
+
+            <article>
+                <h2>Testando corpo principal do site - section notícias</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae atque pariatur delectus ex aperiam, saepe ullam in minus accusamus sequi numquam blanditiis consequuntur eum porro. Beatae voluptate laborum officiis impedit.</p>
+                <aside>
+                    <p>Artigo escrito por David - aside</p>
+                </aside>
+            </article>            
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Testando o rodapé</p>
+    </footer>    
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon_css.ico" type="image/x-icon"> 
+    
+    <title>Pseudo elemento</title> 
+    
+    <style>
+      /* 
+      Seletores personalizados
+         #  = id
+         .  = class
+         :  = pseudo class
+         :: = pseudo elemento
+         >  = filho
+
+      */
+      
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /*abaixo estão as pseudos clase, elas são responsáveis por mudar o estado do elemento*/
+
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        /*abaixo estão os pseudos elementos, eles são reponsáveis por alterar o conteúdo ou adicionar elementos ao redor.*/
+
+        /*after depois dos links adicionar os conteúdos abaixo*/
+        a::after{
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgreen;
+        }
+
+        /*antes do link adicionar um simbolo de flecha - simbolo retirado do site https://erikasarti.com/html/dingbats-simbolos-desenhos/*/
+        a::before{
+            content: ' ⇒ ';
+        }
+
+        /*inserindo um pseudo elemento na classe recomendado do banco itaú. os pseudos elementos podem seru usado tanto em classes quanto em id*/
+        .recomendado::after{
+            content:'✌';
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.itau.com.br/" target="_blank" class="recomendado">Banco Itaú</a></li>
+
+        <li><a href="https://www.bb.com.br/site/" target="_blank">Banco do Brasil</a></li>
+
+        <li><a href="https://www.santander.com.br/" target="_blank">Banco Santander</a></li>
+    </ul>
+    
+
+</body>
+
+</html>

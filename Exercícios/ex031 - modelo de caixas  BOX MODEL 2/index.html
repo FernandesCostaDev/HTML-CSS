@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon_css.ico" type="image/x-icon"> 
+    
+    <title>Box-Model 2 </title> 
+
+    <style>
+
+        
+
+        h1{/*box-level*/
+            background-color: rgb(204, 202, 238);
+
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+
+            height: 300px;
+            width: 400px;            
+
+            /*simplificando a border, padding, margin e outline através da shorthand*/
+
+            border: 10px solid black; /*estilo da borda*/ 
+
+            padding: 10px; /*Inseriu um espaço nos quantros quantos do padding de 10px de forma resumida informando somente um valor.*/
+
+            margin: 20px 20px 20px 20px; /*Inseriu um espaço nos quatros cantos da margin com os quatro valores de cada margin. Pode usa auto tamém para centralizar o conteúdo na tela.*/
+
+            outline: 5px dashed red; /*Inseriu um outline do lado de fora da margin*/        
+            
+        }
+
+        p{/*box-level*/
+            background-color: rgb(204, 202, 238);
+
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+
+            height: 300px;
+            width: 400px;            
+
+            /*simplificando a border, padding, margin e outline através da shorthand*/
+
+            border: 10px solid black; /*estilo da borda*/ 
+
+            padding: 10px; /*Inseriu um espaço nos quantros quantos do padding de 10px de forma resumida informando somente um valor.*/
+
+            margin: 20px 20px 40px 20px; /*Inseriu um espaço nos quatros cantos da margin com os quatro valores de cada margin. Pode usar auto também para centralizar o conteúdo na tela.*/
+
+            outline: 5px dashed red; /*Inseriu um outline do lado de fora da margin*/     
+        }
+
+        a{/*in-line level*/
+            background-color: rgb(204, 202, 238);
+
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+
+            height: 300px;
+            width: 400px;            
+
+            /*simplificando a border, padding, margin e outline através da shorthand*/
+
+            border: 10px solid black; /*estilo da borda*/ 
+
+            padding: 5px; /*Inseriu um espaço nos quantros quantos do padding de 10px de forma resumida informando somente um valor.*/
+
+            margin: 90px; /*Inseriu um espaço somente no cantos da margin esquerda e direita com dois valores de margin. Pode usa auto tamém para centralizar o conteúdo na tela.*/
+
+            outline: 5px dashed red; /*Inseriu um outline do lado de fora da margin*/     
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Título principal é um exemplo de box-level. Nesse exemplo foi inserido uma outline, uma linha do lado de fora da borda.</h1> 
+
+    <p>Parágrafo é um exemplo de box-level.</p>
+
+    <a href="#">Link é um exemplo de box-inline level.</a>
+
+</body>
+
+</html>

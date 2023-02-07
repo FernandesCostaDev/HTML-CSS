@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon_html.ico" type="image/x-icon"> 
+    
+    <title>Fontes com Google Fontes </title> 
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+        /*fonte baixada do site dfonte*/
+
+        @font-face {
+            font-family: proxima nova;
+            src: url(fontes/proxima-nova-bold.otf) format(opentype);
+        }
+        
+        @font-face {
+            font-weight: lighter;
+            font-family: halloween;
+            src: url(fontes/Halloween\ Morning.ttf) format(truetype);
+            
+            /*se quiser addicionar a outra fonte é só usar os mesmo comandos acima. retira o ponto e vigula e coloca virgula para digitar o restante dos comandos. Lembrando de alterar o format de acordo com tipo da fonte, se otf ou ttf*/
+
+            /*
+            tipos de format() cada navegador entende um tipo de fonte. O correto é baixar uma fonte que tenha otf e ttf junto.
+
+            opentype(otf)
+            truetype(ttf)
+            embedded - opentype
+            truetype-aat(Apple Advance Typography)
+            svg
+            */
+        }
+
+        body{
+            font-family: 'Work Sans';
+            font-size: 16px;
+            color: black;
+        }
+
+        h1{
+            font-family: 'Kaushan Script', serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+
+        h2{
+           font-family: 'Lobster';
+           font-size: 2em; 
+           font-weight: lighter;
+        }      
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, neque sunt? Ullam omnis iure neque reiciendis ducimus perferendis illo. Totam neque optio culpa inventore unde. Maxime voluptatem omnis expedita incidunt?</p>
+
+    <h2>Subtitulo</h2>
+    <p style="font-family: halloween">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi illum aliquam perferendis voluptate suscipit? Animi, pariatur voluptates veniam officiis culpa quae quam sapiente, exercitationem nesciunt voluptatem odio aperiam? Fugiat, ducimus?</p>
+
+    <p style="font-family: proxima nova; color: #2bc63a; font-size: 28px; font-weight: bolder">Olá, eu sou o PIÁ</p>
+    <p style="font-family: proxima nova; color: #0a5775; font-size: 18px; font-weight: bolder;">A inteligência Artificial do Paraná</p>
+    <p style="font-family: Arial, Helvetica, sans-serif;">Fonte copiada com FontNinja do site do governo do Paraná</p>
+
+</body>
+
+</html>
