@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_css.ico" type="image/x-icon">
+    <title>Ajustando a imagem de background</title>
+
+    <style>
+        
+        body{
+            height: 100vh;
+            background-color: black;
+            background-image: url(midias/imagem/wallpaper002.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+
+            /*Por padrão o background é auto*/
+            background-size: auto;
+            
+            /*O contain exibi 100% da imagem independente do tamanho da view port, porém ele cria barras na altura e nas laterais. E uma opção.*/
+            background-size: contain;
+
+            /*O cover é a melhor opção, ele não exibe 100% da imagem, mas ele faz uma adaptação, faz cortes, para imagem ser viasulizada na view port independete do tamanho do navegador*/
+            background-size: cover;
+
+            
+        }
+
+        main{
+            text-align: justify;
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 3px solid darkblue;
+            border-radius: 15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam natus labore totam dicta placeat eaque vitae quod velit dignissimos pariatur aliquam perferendis tempora, voluptatem tempore, iure cumque? Laudantium, deleniti obcaecati.</p>
+    </main>
+    
+</body>
+
+</html>
