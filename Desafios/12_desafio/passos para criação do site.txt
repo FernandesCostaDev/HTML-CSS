@@ -7,3 +7,5 @@ Section
 footer - rodapé
 
 Inserir os h1, parágrafos, configurar os links, etc.
+
+Criar e configurar a estrutura CSS
