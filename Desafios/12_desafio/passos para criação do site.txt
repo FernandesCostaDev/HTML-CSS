@@ -1,0 +1,9 @@
+Criar e configurar a estrutura HTML do site
+
+Header - cabeçalho
+
+Section
+
+footer - rodapé
+
+Inserir os h1, parágrafos, configurar os links, etc.

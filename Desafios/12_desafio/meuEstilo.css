@@ -1,4 +1,77 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
+@charset "UTF-8";
+
+/*Configurações gerais para resetar todas todos os elementos*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Configurações em comum entre o html e body*/
+
+html, body{
+    /*Configuração para que o corpo do site tenha 100% da altura da view port*/
+    min-height: 100vh;
+    background-color: darkgray;
+    
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+   padding-top: 50px; 
+   /*Tecnica para deixar todas as letras maiusculas - text-transform: uppercase;*/
+
+   /*Tecnica para deixar as letras maiusculas e a primeira letra maiuscula um pouco maior*/
+
+   font-variant: small-caps;
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+heaver a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+/*Fazer com que as sections tenha uma porcentagem da altura no top e na parte inferior. E uma forma de deixar o coteúdo se ajustando automáticamente com o tamanho da view port*/
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;  
+    /*inserir um espaçamento duplo entre as linhas para melhor a leitura.*/
+    line-height: 2em;  
+    padding-left: 30px;   
+}
+
+section.normal{
+    background-color: white;
+    color: black;    
+}
+
+section.imagem{
+    background-color: rgb(53, 52, 52);
+    color: white;
+}
+
+section.imagem > p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.315);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
