@@ -15,6 +15,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES:
         TABLE
+            CAPTION - TITULO DA TABELA
             THEAD - CABEÇALHO
                 TR,TD,TH
                 
@@ -26,11 +27,13 @@
     -->
     <table>
 
-        <thead>           
+        <caption>Tabela com a população das Unidades Federativas</caption>
+        <thead>  
+            <!--Inserindo um escopo de coluna para o titulo. Muito importante essa informação no código para os mecanismos de buscas do Google-->         
             <tr>
-                <th>Posição</th>                
-                <th>Estado</th>         
-                <th>População</th>
+                <th scope="col" style="width: 50px;">Posição</th>                
+                <th scope="col">Estado</th>         
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
 
@@ -201,8 +204,9 @@
 
 
         <tfoot>
+            <!--Inserindo um escopo de linha para o titulo -->
             <tr>               
-                <th>Total de habitantes:</td>
+                <th scope="row">Total</td>
                 <td></td>
                 <td style="text-align: right;"><strong>210.147.125</strong></td>
             </tr>
