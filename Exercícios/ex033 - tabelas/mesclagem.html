@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tabelas</title>
+
+    <style>
+        table{
+            width: 400px;            
+            border-collapse: collapse;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mesclagem de células</h1>
+    <table>
+        <tr>
+            <!--Retirar a célula C. Fazer com que a célula B ocupe o espaço da C-->            
+            <td>A1</td>
+            <td colspan="2">B1</td>            
+        </tr>
+
+        <tr>
+            <td>D2</td>
+            <td>E2</td>
+            <td rowspan="3">F2</td>
+        </tr>
+
+        <tr>
+            <!--Retirar a célula G-->            
+            <td rowspan="3">H3</td>
+            <td>I3</td>
+        </tr>
+        <!--Retirando as células G e J, vai abrir um buraco abaixo da célula F. Então vai ser preciso fazer a célula F ocupar o espaço.-->
+        <tr>
+            <!--Retirar a célula J-->            
+            <!--Retirar a célula L, a célula H vai ocupar o spaço de-->            
+            <td>M3</td>
+        </tr>
+   </table>
+</body>
+
+</html>

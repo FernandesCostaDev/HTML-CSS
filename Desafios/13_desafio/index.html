@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon_html.ico" type="image/x-icon">
+    <link rel="stylesheet" href="meuEstilo.css">
+
+    <style>
+        table{            
+            width: 400px;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+
+    <title>Desafio 13</title>
+    
+</head>
+
+<body>
+    <h1>Desafio mesclagem de células - parte 1</h1>
+
+    <table>
+        <h2>Tabela original</h2>
+
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>            
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>            
+        </tr>
+
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>            
+        </tr>
+
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>            
+        </tr>
+
+        <tr>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>            
+        </tr>
+
+    </table>
+    
+
+    <table>
+
+        <h2>Tabela modificada</h2>
+
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <!--Célula 7 retirada-->
+            <td>7</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">8</td>
+            <!--Célula 10 retirada-->
+            <!--Célula 11 retirada-->
+            <td>9</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <!--Célula 15 retirada-->
+            <td>12</td>
+        </tr>
+
+        <tr>
+            <!--Célula 17 retirada-->
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+
+    </table>
+
+    <h1>Desafio mesclagem de células - parte 2</h1>
+
+    <table>
+
+        <h2>Tabela original</h2>
+
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+            <td>E</td>
+        </tr>
+
+        <tr>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+            <td>J</td>
+        </tr>
+
+        <tr>
+            <td>K</td>
+            <td>L</td>
+            <td>M</td>
+            <td>N</td>
+            <td>O</td>
+        </tr>
+
+        <tr>
+            <td>P</td>
+            <td>Q</td>
+            <td>R</td>
+            <td>S</td>
+            <td>T</td>
+        </tr>
+
+        <tr>
+            <td>U</td>
+            <td>V</td>
+            <td>W</td>
+            <td>X</td>
+            <td>Y</td>
+        </tr>
+        
+    </table>
+
+    <table>
+
+        <h2>Tabela modificada</h2>
+
+        <tr>
+            <td colspan="4">A</td>            
+            <!--Retirado as células B C D-->
+            <td rowspan="4">B</td>
+        </tr>
+
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+            <!--Retirado as células J-->
+        </tr>
+
+        <tr>
+            <!--Retirado as células K-->
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+            <!--Retirado as células O-->
+        </tr>
+
+        <tr>
+            <!--Retirado as células P-->
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+            <!--Retirado as células T-->
+        </tr>
+
+        <tr>
+            <!--Retirado as células u-->
+            <td colspan="4">N</td>
+            <!--Retirado as células W-->
+            <!--Retirado as células X-->
+            <!--Retirado as células Y-->
+        </tr>
+
+    </table>
+    
+</body>
+
+</html>

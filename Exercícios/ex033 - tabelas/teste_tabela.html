@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_css.ico" type="image/x-icon">
+    <title>Exercício</title>
+
+    <style>
+        body{
+            background-color: #191622;
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        section{            
+            width: 600px;
+            height: 500px;
+            margin: auto;  
+            margin-top: 20px;         
+            background-color: #302a41; 
+        } 
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            margin: auto;                  
+        }
+
+        caption{
+            margin: 10px;
+        }
+
+        th,td{
+            border: 1px solid white;                
+        }
+
+    </style>
+
+</head>
+
+<body>    
+
+    <section>
+
+        <table>
+            <caption>Lista de compras</caption>
+
+            <thead>
+                <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Produto</th>
+                <th scope="col">Unidade</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Sub-valor</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                <td>01</td>
+                <td>Café</td>
+                <td>Pacote</td>
+                <td>02</td>
+                <td>R$10,50</td>
+                <td>R$21,00</td>
+                </tr>  
+                
+                <tr>
+                    <td>02</td>
+                    <td>Arroz</td>
+                    <td>Pacote</td>
+                    <td>02</td>
+                    <td>R$20,50</td>
+                    <td>R$41,00</td>
+                </tr>  
+                
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th colspan="5" scope="row" style="text-align: left;">Valor total:</th>                
+                    <td>R$ 62,00</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </section>
+
+    <footer></footer>
+   
+</body>
+
+</html>
