@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento de colunas</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;         
+        }
+
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 5px;            
+        }
+
+        .c_nome{
+            background-color: yellow;
+        }
+
+        .c_idade{
+            background-color: cadetblue;
+        }
+
+        .c_sexo, .c_profissao{
+            background-color: cornflowerblue;
+        }
+
+        .c_grupo{
+            background-color: darkmagenta;
+        }
+
+        .cinza{
+            background-color: gray;
+        }
+
+        .azul{
+            background-color: lightblue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Tabela 1</h1>
+    <table>
+
+        <!--Inserindo um colgroup para persolizar uma coluna inteira-->
+        <colgroup>
+            <!--Uma tag col para cada titulo da coluna-->
+            <col class="c_nome">
+            <col class="c_idade">
+            <col class="c_sexo">
+            <col class="c_profissao">
+            <!--Foi criado uma classe c_grupo, personalizada para ser usada em duas colunas simultâneamente-->
+            <col class="c_grupo" span="2">
+        </colgroup>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Profissão</th>
+            <th scope="col">RG:</th>
+            <th scope="col">Escolaridade</th>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td> 
+            <td>00000000000</td>
+            <td>Terceiro grau</td>           
+        </tr>
+
+        <tr>
+            <td>Julio Franco</td>
+            <td>M</td>
+            <td>26</td>
+            <td>Estudante</td>
+            <td>00000000000</td>
+            <td>Segundo grau</td> 
+        </tr>
+
+        <tr>
+            <td>Moraes Cardoso</td>
+            <td>M</td>
+            <td>44</td>
+            <td>Engenheiro civil</td>
+            <td>00000000000</td>
+            <td>Terceiro grau</td> 
+        </tr>
+
+        <tr>
+            <td>Roberta de Almeida</td>
+            <td>F</td>
+            <td>32</td>
+            <td>Professora</td>
+            <td>00000000000</td>
+            <td>Terceiro grau</td> 
+        </tr>
+    
+
+
+    </table>
+
+    <h1>Tabela 2 - efeito zebrado</h1>
+    <table>
+
+        <!--Inserindo um colgroup para persolizar uma coluna inteira-->
+        <colgroup>
+            <!--Uma tag col para cada titulo da coluna-->
+            <col class="cinza">
+            <col class="azul">
+            <col class="cinza">
+            <col class="azul">
+            <col class="cinza">
+            <col class="azul">
+
+        </colgroup>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Profissão</th>
+            <th scope="col">RG:</th>
+            <th scope="col">Escolaridade</th>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td> 
+            <td>00000000000</td>
+            <td>Terceiro grau</td>           
+        </tr>
+
+        <tr>
+            <td>Julio Franco</td>
+            <td>M</td>
+            <td>26</td>
+            <td>Estudante</td>
+            <td>00000000000</td>
+            <td>Segundo grau</td> 
+        </tr>
+
+        <tr>
+            <td>Moraes Cardoso</td>
+            <td>M</td>
+            <td>44</td>
+            <td>Engenheiro civil</td>
+            <td>00000000000</td>
+            <td>Terceiro grau</td> 
+        </tr>
+
+        <tr>
+            <td>Roberta de Almeida</td>
+            <td>F</td>
+            <td>32</td>
+            <td>Professora</td>
+            <td>00000000000</td>
+            <td>Terceiro grau</td> 
+        </tr>
+    </table>
+</body>
+
+</html>
