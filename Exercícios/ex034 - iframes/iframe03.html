@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_css.ico" type="image/x-icon">
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*Configurando o iframe*/
+        iframe{
+            /*configurar o iframe para ocupar 95% de largura da viewport*/
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+
+        }
+
+    </style>
+    <title>Teste com iframe - 3</title>
+</head>
+
+<body>
+    <h1>Faça uma escolha nos links para visualizar um iframe.</h1>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor dicta maiores possimus praesentium voluptas! Veritatis debitis magni ullam illum velit. Facilis maxime voluptatibus dolores hic, officiis delectus natus enim accusamus.</p>
+
+    <ul>
+        <!--Inserir os links das páginas extras-->
+        <li><a href="pagina_extras/pagina_extra_1.html" target="tela_iframe">Primeira página</a></li>
+
+        <li><a href="pagina_extras/pagina_extra_2.html" target="tela_iframe">Segunda página</a></li>
+
+        <li><a href="pagina_extras/pagina_extra_3.html" target="tela_iframe">Terceira página</a></li>
+        
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ut iste enim laudantium, hic repellat voluptatibus mollitia optio quam nihil aliquam, perspiciatis necessitatibus voluptates quas doloribus! Ex non suscipit doloremque!</p>
+
+    <!--Inserir um nome para o iframe para que a ancora encontre-o e libera a pagina para ser exibida no iframe-->
+    <iframe 
+        id="tela" name="tela_iframe" src="" frameborder="0">            
+    </iframe>
+
+</body>
+
+</html>
