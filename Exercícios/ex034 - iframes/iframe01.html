@@ -7,16 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon_css.ico" type="image/x-icon">
     <title>Estudos de iframes</title>
+
+    <style>
+        iframe{
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+        }
+    </style>
+
 </head>
 
 <body>
-    <h1>Testando o uso de um iframe</h1>
 
-    <p>Acessando o site do Estudonauta sem iframe: <a href="https://www.estudonauta.com/" target="_blank">Clique aqui</a></p>
+    <h1>Testando o uso de um iframe</h1>    
 
+    <p>Acessando o site do <a href="https://www.estudonauta.com/" target="_blank">Estudonauta</a> sem iframe:</p>
+    <br>
+    <hr>
+
+    <!--O tamanho padrão do iframe é de 300 x 150 px. Caso queira pode se configurar o tamanho do iframe via tag style no head informando a largura e altura. Ou configurar de forma individual. No exemplo a baixo foi configurado de forma individual, porém como foi inserido as configurações no style do head, essa configuração abaixo perdeu validade-->
+    <p>Acessando o site do <iframe src="https://www.estudonauta.com/" frameborder="0" height="500" width="500" scolling="auto"></iframe> com iframe: <!--O comando scolling serve para criar uma barra de rolagem caso o conteúdo site seja maior que o iframe--> 
+    </p>
+
+    <hr>
     <br>
 
-    <p>Acessando o site do Estudonauta com iframe: <iframe src="https://www.estudonauta.com/" frameborder="0"></iframe></p>
+    <!--Inserir um comentário apos o frameborder com uma mensagem de que a página informada não pode ser acessada e colocar uma âncora como alternativa, é uma boa prática de programação. Porém, nem sempre o navegador ou a página aceita esses comandos. Fica como uma dica-->
+    <p>O repositório do 
+        <iframe src="https://github.com/FernandesCostaDev/" frameborder="0">
+        <a href="https://github.com/FernandesCostaDev" target="_blank"> repositório GitHub do David</a>
+        </iframe> também é bem legal!
+    </p>
+
 </body>
 
 </html>
