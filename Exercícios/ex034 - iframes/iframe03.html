@@ -9,7 +9,7 @@
 
     <style>
         body{
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;            
         }
 
         /*Configurando o iframe*/
@@ -19,9 +19,9 @@
             height: 400px;
             border: 2px solid black;
 
-        }
-
+        }  
     </style>
+
     <title>Teste com iframe - 3</title>
 </head>
 
@@ -43,10 +43,11 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ut iste enim laudantium, hic repellat voluptatibus mollitia optio quam nihil aliquam, perspiciatis necessitatibus voluptates quas doloribus! Ex non suscipit doloremque!</p>
 
     <!--Inserir um nome para o iframe para que a ancora encontre-o e libera a pagina para ser exibida no iframe-->
-    <iframe 
-        id="tela" name="tela_iframe" src="" frameborder="0">            
+    
+    <iframe id="tela" name="tela_iframe"  srcdoc= "<h1>Escolha uma página acima.</h1> <img  src='midias/imagem/html_css.jpg'>"frameborder="0">
     </iframe>
 
+    
 </body>
 
 </html>
