@@ -1,2 +1,66 @@
 @charset "UTF-8";
 
+/*Resete total da página*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Configurar o html e body para ocupar 100% da página - view port*/
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+body{
+    background-image: url(midias/imagem/fundo-madeira.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    /*backgroun size cover para cobrir a tela inteira com a imagem*/
+    background-size: cover;
+    
+    /*Não ha necessidade nesse caso, mas já define uma imagem fixa de background*/
+    background-attachment: fixed;
+}
+
+main{
+    position: relative;
+    height: 100vh;    
+}
+
+section#telefone{
+    position: absolute;
+
+    /*Com a configuração do position, agora só ajustar o conteúdo no meio da tela com os comando top e left*/
+    top:50%;
+    left:50%;
+
+    /*Ajuste fino com o transform*/
+    transform: translate(-50%, -50%);
+
+    /*altura e largura de acordo com tamanho da foto do celular*/
+    height: 627px;
+    width: 311px;
+
+    background-image: url(midias/imagem/frame-iphone.png);
+    background-repeat: no-repeat;
+    
+}
+
+/*Configurando o iframe*/
+
+iframe#tela{
+    /*Criar um posicionamento relativo para imagem ficar somente dentro da tela do celular, pois esse iframe é filho da section celular. Com esse posicionamento relativo podemos configurar as dimensões do iframe.*/
+    position: relative;
+    top: 80px;
+    left: 22px;
+
+    /*Como a imagem da home é muito grande, foi necessário diminui-la com 100px para ter uma noção e ir ajustando até ficar numa proporção igual da tela do celular.*/
+    width: 269px;
+    height: 471px;
+
+}
