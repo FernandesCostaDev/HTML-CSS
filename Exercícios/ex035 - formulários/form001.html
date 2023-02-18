@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_css.ico" type="image/x-icon">
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+    <title>Formulario - 01</title>
+    
+</head>
+
+<body>
+
+    <h1>Meu primeiro formulário</h1>
+
+    <h2>Formário GET:</h2>
+
+    <!--Criação de um formulário básico com método GET (padrão), esse método mostra o que foi digitado no formulário na url, isso pode causar uma falha de segurança.O método GET é mais usado quando os dados não são sensíveis, como nome, peso, altura ou quando se precisa compartilhar o link do formulário-->
+    <form action="formulario.php" method="get" autocomplete="off"> 
+        <!--Auto completar desligado. O comando action serve para guardar os dados do formulário quando um servidor estiver sendo utilizado para tal função.-->
+
+        <!--Para vincular o nome do campo ao espaço para inserção de dados, é necessário cria uma label (ctrl + shift + p) -->
+
+        <p><label for="id_nome">Nome:</label> <input type="text" name="nome" id="id_nome"></p>
+
+        <p><label for="id_sobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="id_sobrenome"></p>
+
+        <p><input type="submit" value="Enviar"></p>
+
+    </form>
+
+    <br>
+    <hr>
+
+    <h2>Formulario POST:</h2>
+    <!--Criação de um formulário básico com método POST, esse método não mostra o que foi digitado no formulário na url, porém pode se obter esses dados na seção das ferramentas do desenvolvedor do navegador > rede > cabeçaho depois de tentar enviar as informações. O método POST é usado quando os dados são sensíveis, tal como documentos, número de contas, número cartão, senhas, ou quando a quantidades de letras do formulario GET ultrapassar 3 mil palavras entre todos os campos.-->
+
+    <form action="formulario_2.php" method="post">
+
+        <p><label for="id_agencia">Agência</label>: <input type="text" name="agencia" id="id_agencia"></p>
+
+        <p><label for="id_conta">Conta:</label> <input type="text" name="conta" id="id_conta"></p>
+
+        <p><label for="id_numero">Número do cartão:</label> <input type="text" name="numero" id="id_numero"></p>
+
+        <p><input type="submit" value="Enviar"></p>
+
+    </form>
+</body>
+
+</html>
