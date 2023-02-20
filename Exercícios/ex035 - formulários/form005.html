@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_css.ico" type="image/x-icon">
+    <title>Formulario 05</title>
+</head>
+
+<body>
+    
+    <form action="formulario.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <!--Para esse tipo de marcação RADIO, precisa inserir no for do label o mesmo nome do input para que fique somente uma alternativa escolhida e não as duas ao mesmo tempo. O comando CHECKED serve para já deixar uma opçao marcada.-->
+            <legend>Sexo</legend>
+
+            <label for="sexo">Masulino</label>
+
+            <input type="radio" name="sexo" id="id_masculino" value="M" checked>
+
+            <label for="sexo">Feminino</label>
+
+            <input type="radio" name="sexo" id="id_feminino" value="F">
+        </fieldset>
+
+        <fieldset>
+            <!--Para essa marcação do tipo checkbox, pode ser marcadas todas as alternativa-->
+            <legend>Meu esportes favoritos</legend>
+
+            <input type="checkbox" name="futebol" id="id_futebol"> 
+
+            <label for="id_futebol"> Futebol</label> <br>
+
+            <input type="checkbox" name="Volei" id="id_voleibol"> <label for="id_voleibol">Voleibol</label> <br>
+
+            <input type="checkbox" name="basquete" id="id_basquete"> <label for="id_basquete">Basquete</label> <br>
+
+            <input type="checkbox" name="handbol" id="id_handbol"> <label for="id_handbol">Handebol</label> <br>
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        
+
+
+    </form>
+
+</body>
+
+</html>
