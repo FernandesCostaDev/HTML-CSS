@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon_css.ico" type="image/x-icon">
+
+    <title>formulario 07</title>
+</head>
+
+<body>
+    <form action="formulario.php" method="post" autocomplete="on">
+
+        <!--Criação de um SELECT. Para colocar em ordem alfabetica precisa digitar na ordem. o SELEC não fornece a opção de ordem alfabetica. A tag optgroup cria uma separação de grupos. Nesse caso, foi separado os estados por regiões brasileira. Para aparecer um estado selecionado é só acrecentar SELECT após o VALUE da abreviação do estado-->
+        
+        <p>
+            <label for="id_estado">Estado</label>
+
+            <select name="estado" id="id_estado">
+
+                <option value=""select>-----------Escolha-----------</option>
+
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    
+                </optgroup>
+                
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    
+                </optgroup>
+
+                <optgroup label="Região Centro Oeste">
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="GO">Goiás</option>
+                    
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PI">Piauí</option>
+                    <option value="CE">Ceará</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                    
+                </optgroup>
+
+                <optgroup label="Região Norte">
+                    <option value="AM">Amazonas</option>
+                    <option value="RR">Roraima</option>
+                    <option value="AP">Amapá</option>
+                    <option value="PA">Pará</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="AC">Acre</option>                 
+                </optgroup>
+            </select>
+
+        </p>
+
+        <!--Criação do DATALIST. É bem parecido com o SELECT acima.Só que aqui além de aparecer a lista, pode se adicionar um novo conteúdo que não esteja listado.-->
+        <p>
+            <label for="id_profissão">Profissão</label>
+            <input type="text" name="profissão" id="id_profissão" list="lista_profissao">
+
+            <datalist id="lista_profissao">
+                <option>Administrador</option>
+                <option>Contador</option>                
+                <option>Desenvolvedor</option>                
+                <!--Foi colocado um valor para o VALUE para deixar um exemplo que podemos colocar um valor dentro do VALUE-->
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="id_mensagem">Mensagem</label> <br>
+            <!--Para o TEXTAREA, há a necessidade de mudar o método para POST-->
+            <textarea name="mensagem" id="id_mensagem" cols="30" rows="10">
+
+            </textarea>
+        </p>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+
+    </form>
+</body>
+
+</html>
