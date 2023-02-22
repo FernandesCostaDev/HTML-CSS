@@ -6,10 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon_css.ico" type="image/x-icon">
+
+    
     <title>Formulário 08</title>
 </head>
 
 <body>
     
+    <form action="formulario.php" method="post" autocomplete="on">
+        <p>
+            <label for="id_n1">1º Valor:</label>
+            <input type="number" name="n1" id="id_n1" placeholder="digite" min="0" max="50" required oninput="id_resultado.innerHTML = Number(id_n1.value) + Number(id_n2.value)">
+        </p>
+
+        <p>
+            <label for="id_n2">2º Valor:</label>
+            <input type="number" name="n2" id="id_n2" placeholder="digite" min="0" max="50" required oninput="id_resultado.innerHTML = Number(id_n1.value) + Number(id_n2.value)">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        <p>
+            <label for="id_resultado">Resultado da soma</label>
+            <output name="resultado" id="id_resultado">0</output>
+        </p>
+
+    </form>
+
 </body>
+
 </html>
