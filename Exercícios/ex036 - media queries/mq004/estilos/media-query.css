@@ -1,3 +1,148 @@
 @charset "UTF-8";
 
 /*Todas as demais mídias*/
+
+/*
+Pesquisar na W3C sobre Typical Device Breakpoinst
+-------------------------------------------------
+Pequenas telas: até 600px;
+Celulares: de 600px até 768px;
+Tablet: 768px até 992px;
+Desktop: 992px até 1200px;
+Grandes telas: acima de 1200px.
+*/
+
+/*A MEDIA TYPE com as MEDIAS FEATURES para tela pequenas e para celulares já foram criada no TYPE ALL para SCREEN no arquivo para Mobile First. Daqui pra frente serão criadas as MEDIA TYPE para SCREEN e para PRINTS*/
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /*Todas as outras confirgurações padrão ficarão na style do mobile first*/
+
+    /*Alteração da imagem de background para imagem de tablet*/
+    
+    body{
+        background-image: url(../../midias/imagem/back-tablet.jpg);
+    }
+
+    img#fone{
+        display: none;
+    }    
+    
+    img#tablet{
+        display: block;
+    }
+    
+    img#print{
+        display: none;
+    }
+    
+    img#pc{
+        display: none;
+    } 
+    
+    img#tv{
+        display: none;
+    }  
+    
+}
+
+/*Desktop*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background-image: url(../../midias/imagem/back-pc.jpg);
+    }
+
+    img#fone{
+    display: none;
+    }
+
+    img#tablet{
+        display: none;
+    }
+
+    img#print{
+        display: none;
+    }
+
+    img#pc{
+        display: block;
+    } 
+
+    img#tv{
+        display: none;
+    }  
+}
+
+/*Grandes telas*/
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../../midias/imagem/back-tv.jpg);
+    }
+
+    img#fone{
+        display: none;
+    }    
+    
+    img#tablet{
+        display: none;
+    }
+    
+    img#print{
+        display: none;
+    }
+    
+    img#pc{
+        display: none;
+    }    
+    
+    img#tv{
+        display: block;
+    }  
+}
+
+/*Versão do site para impressoras*/
+@media print{
+
+    *{
+        font-family:'Courier New', Courier, monospace;
+    }
+   
+    /*Não tem como imprimir background nas impressões. Por isso, o BACKGROUND IMAGE FOI RETIRADO, NÃO HÁ NECESSIDADE.*/     
+    
+    main{
+        text-align: center;
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after{        
+        content: 'Essa impressão foi feita atravé do site Curso em Vídeo';
+        text-decoration: overline;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    img#fone{
+        display: none;
+    }    
+    
+    img#tablet{
+        display: none;
+    }
+    
+    img#print{
+        display: block;
+    }
+    
+    img#pc{
+        display: none;
+    } 
+    
+    img#tv{
+        display: none;
+    } 
+    
+}

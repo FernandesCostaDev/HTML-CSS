@@ -59,10 +59,11 @@ img{
     margin: auto;
 }
 
-/*desativando cada icone com o DISPLAY NONE*/
 img#fone{
     display: block;
 }
+
+/*desativando cada icone com o DISPLAY NONE. No arquivo css para todas as mídias, será liberado cada ícone de acordo com a MEDIA TYPE para cada dispositivo.*/
 
 img#tablet{
     display: none;
