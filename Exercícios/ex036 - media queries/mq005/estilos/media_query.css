@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/*Typical Device Breakpoint
+Pequenas telas: até 600px;
+Celular: 600 até 768px;
+Tablet: 768 até 992px;
+Desktop: 992 até 1200px;
+Grandes telas: Acima de 1200px;
+*/
+
+/*Acima dos tamanhos de telas para celulares será ixibido o menu normalmente*/
+@media screen and (min-width: 768px) {
+    /*Comando para retirar o menu tipo hamburguer*/
+    span#icone_hamburgue{
+        display: none;
+    }
+
+    menu{
+        /*O comando DISPLAY NONE retirou as opçoes do menu. Usar o DISPLAY BLOCK para voltar as opções.*/
+        display: block;               
+    }
+
+    menu > ul > li{
+        /*Comando para colocar as opções de menu uma do lado da outra*/
+        display: inline-block;
+        width: 100px;          
+    }  
+
+    main{
+        width: 768px;
+    }      
+}

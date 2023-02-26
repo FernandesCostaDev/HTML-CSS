@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../favicon_css.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media_query.css">
     <title>Media Query</title>
 
     <!--Passo 1: copiar o link do google icons-->
@@ -14,7 +15,8 @@
 
 </head>
 
-<body>
+<!--Criação da função mudou tamanho, pois deu problema no menu depois da alteração de esconder o menu hamburguer para telas maiores-->
+<body onresize="mudouTamanho">
     <header>
 
         <h1>Meu site com menu responsivo</h1>
@@ -45,7 +47,17 @@
     
     <!--Configuração da função CLICKMENU para o menu em javaScript-->
     <script>
+
+        function mudouTamanho(){
+            if(window.innerWidth){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu(){
+
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
             }else{
