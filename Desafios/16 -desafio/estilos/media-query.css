@@ -14,7 +14,7 @@ Grandes telas: Acima de 1200px;
     /*Fazer o tamanho da saction ficar com 80% da largura da tela*/
     section#login{
         width: 500px;
-        height: 400px;
+        height: 280px;
     }
 
     section#login > div#imagem{  
@@ -41,7 +41,8 @@ Grandes telas: Acima de 1200px;
 
 @media screen and (min-width: 992px) {
     section#login{
-        width: 950px;
+        width: 600px;
+        height: 350px;
     }
 
     section#login > div#imagem{  
@@ -62,7 +63,9 @@ Grandes telas: Acima de 1200px;
     }
 
      div#formulario > p{
-        font-size: 1.2em;
+        text-align: center;
+        font-size: 1em;
+        margin: 20px 0px;
     }
 
 }
